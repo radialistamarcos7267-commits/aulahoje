@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sabores do Mundo - Restaurante</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurante do marcao do trombone</h1>
+    </header>
+    <main>
+        <section class="cartao">
+            <h2>Sobre o Nosso Restaurante</h2>
+            <div class="area-imagem">
+                <!-- PASSO 1 Resolvido: Descrição detalhada da imagem para leitores de tela (NVDA) -->
+                <img src="restau.jpg">
+            </div>
+            <p>Seja bem-vindo ao Sabores do Mundo! Oferecemos uma experiência gastronômica única, unindo ingredientes frescos locais e técnicas clássicas da culinária internacional em um ambiente aconchegante.</p>
+            
+            <h3>Nossos Destaques</h3>
+            <ul>
+                <li>Ingredientes 100% orgânicos e selecionados</li>
+                <li>Ambiente climatizado com música ao vivo</li>
+            </ul>
+
+            <form>
+                <h3>Faça sua Reserva ou Pedido</h3>
+                <p>
+                    <label for="nome-usuario">marcao do trombone:</label>
+                    <!-- PASSO 2 (Parte A) Resolvido: Atributo required adicionado -->
+                    <input type="text" id="nome-usuario" minlength="3" aria-describedby="dica-nome" required>
+                    <small id="dica-nome">marcos.</small>
+                </p>
+                <p>
+                    <!-- PASSO 3 Resolvido: Ligação correta entre label (for) e input (id) -->
+                    <label for="email-usuario">Seu E-mail:</label>
+                    <input type="email" id="email-usuario">
+                </p>
+                <fieldset>
+                    <legend>Tipo de Serviço:</legend>
+                    <input type="radio" id="op1" name="escolha" value="almoco">
+                    <label for="op1">Almoço Executivo</label><br>
+                    <input type="radio" id="op2" name="escolha" value="jantar">
+                    <label for="op2">Jantar à La Carte</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Adicionais para o Pedido (Checkbox):</legend>
+                    <input type="checkbox" id="check1" name="extras" value="bebida">
+                    <label for="check1">Incluir Bebida Artesanal</label><br>
+                    <input type="checkbox" id="check2" name="extras" value="sobremesa">
+                    <label for="check2">Incluir Sobremesa da Casa</label>
+                </fieldset>
+                <!-- PASSO 2 (Parte B) Resolvido: Adicionado o type="submit" que faltava no botão -->
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Exercício de Revisão - Feito em aula</p>
+    </footer>
+</body>
+</html>
